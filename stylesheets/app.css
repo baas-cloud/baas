@@ -122,19 +122,19 @@ button {  width: auto; overflow: visible; }
   margin: 0 auto;
 }
 
-#cards {
+#buttons {
   text-align: center;
   height: 460px;
 }
 
-#cards a {
+#buttons a {
   cursor: pointer;
   margin: 0 30px 40px 30px;
   display: block;
   float: left;
   width: 180px;
   height: 113px;
-  background: transparent url('../images/card.png');
+  background: transparent url('../images/button.png');
   line-height: 100px;
 
   font-family: Georgia, serif;
@@ -143,7 +143,7 @@ button {  width: auto; overflow: visible; }
   font-weight: bold;
 }
 
-#cards a img {
+#buttons a img {
   width: 180px;
 }
 
