@@ -3,7 +3,7 @@ html5-soundboard
 
 Finally, your lol-inducing WAVs can be standards compliant! by [@jm3](http://twitter.com/jm3)
 
-![](http://html5-soundboard.jm3.net/html5-soundboard-logo.png)
+![](http://businesscards.jm3.net/html5-soundboard-logo.png)
 
 ## Instructions
 
