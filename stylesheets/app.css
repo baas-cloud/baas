@@ -122,12 +122,12 @@ button {  width: auto; overflow: visible; }
   margin: 0 auto;
 }
 
-#buttons {
+.buttons {
   text-align: center;
   height: 460px;
 }
 
-#buttons a {
+.buttons a {
   cursor: pointer;
   margin: 0 30px 40px 30px;
   display: block;
@@ -143,10 +143,6 @@ button {  width: auto; overflow: visible; }
   font-weight: bold;
 }
 
-#buttons a img {
-  width: 180px;
-}
-
 * {
   font-family: 'lucida grande';
 }
@@ -155,14 +151,6 @@ button {  width: auto; overflow: visible; }
   display: none;
   padding-left: 20px;
   height: 40px;
-}
-
-#pic {
-  width: 180px;
-  background: transparent url('../images/joel-bauer.jpg') no-repeat center right;
-  height: 100px;
-  margin: 0 30px 40px 30px;
-  float: left;
 }
 
 #top-bar, #bottom-bar {

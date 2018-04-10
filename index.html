@@ -1,24 +1,15 @@
 <!doctype html>
 <html class='no-js' lang='en'>
   <!-- built with jm3's barebones sinatra template: * https://github.com/jm3/sinatra-template * -->
+  <!-- based on https://github.com/jm3/html5-soundboard -->
   <head>
     <meta charset='utf-8'>
     <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
     <title>
-      The HTML5 Business Card Guy Soundboard by John Manoogian III (jm3)
+      Blocher and Friends as a Service
     </title>
-    <meta content='The HTML5 soundboard delivers laughs... GUARANTEED! What do YOU do guaranteed?' name='description'>
-    <meta content='John Manoogian III (jm3)' name='author'>
-    <meta content='http://html5-soundboard.jm3.net/html5-soundboard-logo.png' property='og:image'>
-    <meta content='public_figure' property='og:type'>
-    <meta content='The HTML5 Soundboard by John Manoogian III (jm3)' property='og:title'>
-    <meta content='http://html5-soundboard.jm3.net/' property='og:title'>
-    <meta content='jm3.net' property='og:site_name'>
-    <meta content='544095209' property='fb:admins'>
-    <link href='./images/favicon.png' rel='shortcut icon'>
     <link href='./stylesheets/app.css' media='all' rel='stylesheet'>
     <script src='./js/vendor/modernizr-1.5.min.js'></script>
-    <meta content='google-sitemap-ID-here' name='verify-v1'>
     <!--[if lt IE 7 ]> <body class="ie6"> <![endif]-->
     <!--[if IE 7 ]> <body class="ie7"> <![endif]-->
     <!--[if IE 8 ]> <body class="ie8"> <![endif]-->
@@ -32,73 +23,43 @@
       <div id='main'>
         <div id='top-bar'>
           <h1>
-            The HTML5 Soundboard by jm3. FINALLY, YOUR PRAYERS ARE ANSWERED
+            "Blocher and Friends" as a Service.
           </h1>
         </div>
         <div id='instructions'>
           Click a sound to play it. Have fun.
         </div>
         <div id='audio' style='display: none;'></div>
-        <div id='buttons'>
-          <div id='pic'></div>
-          <a data-soundfile='absolutely'>Absolutely.</a>
-          <a data-soundfile='trepidation'>The tools.</a>
-          <a data-soundfile='percentage'>Percentages.</a>
-          <a data-soundfile='crap'>On crap.</a>
-          <a data-soundfile='resolution'>On criticism.</a>
-          <a data-soundfile='marketing-capability'>Marketing Capability.</a>
-          <a data-soundfile='expensive'>Four dollars a card.</a>
-          <a data-soundfile='effective'>Life is not about being liked.</a>
-          <a data-soundfile='kidding'>You're kidding!</a>
-          <a data-soundfile='crowds-guaranteed'>Crowds guaranteed.</a>
-          <a data-soundfile='guaranteed'>What do YOU do?</a>
-        </div>
-        <div id='bottom-bar'>
-          <a href='http://twitter.com/home?status=LOL+best+website:+the+HTML5+Soundboard+%3A+http%3A%2F%2Fhtml5-soundboard.jm3.net/' target='_blank' title='Twitter'>
-            Tweet this.
-          </a>
-          <div id='fb'>
-            <iframe allowTransparency='true' frameborder='0' scrolling='no' src='http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fbusinesscards.jm3.net%2F&amp;layout=standard&amp;show_faces=false&amp;width=450&amp;action=like&amp;colorscheme=dark&amp;height=80' style='border:none; overflow:hidden; width:450px; height:80px;'></iframe>
-          </div>
-          <a href='http://jm3.net/' title='John Manoogian III'>
-            Created by jm3.
-          </a>
-          <a href='https://github.com/jm3/html5-soundboard' title='fork me on Github.'>
-            The code.
-          </a>
-          <a href='http://www.youtube.com/watch?v=4YBxeDN4tbk' title='The video that started it all.'>
-            Inspired by&hellip;
-          </a>
-          <div id='preload'>
-            <audio autobuffer='true' preload='auto' src='./sounds/absolutely.mp3'></audio>
-            <audio autobuffer='true' preload='auto' src='./sounds/trepidation.mp3'></audio>
-            <audio autobuffer='true' preload='auto' src='./sounds/percentage.mp3'></audio>
-            <audio autobuffer='true' preload='auto' src='./sounds/crap.mp3'></audio>
-            <audio autobuffer='true' preload='auto' src='./sounds/resolution.mp3'></audio>
-            <audio autobuffer='true' preload='auto' src='./sounds/marketing-capability.mp3'></audio>
-            <audio autobuffer='true' preload='auto' src='./sounds/expensive.mp3'></audio>
-            <audio autobuffer='true' preload='auto' src='./sounds/effective.mp3'></audio>
-            <audio autobuffer='true' preload='auto' src='./sounds/kidding.mp3'></audio>
-            <audio autobuffer='true' preload='auto' src='./sounds/crowds-guaranteed.mp3'></audio>
-            <audio autobuffer='true' preload='auto' src='./sounds/guaranteed.mp3'></audio>
-          </div>
-          <footer></footer>
-          <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js'></script>
-          <script>
-            !window.jQuery && document.write('<script src="./js/vendor/jquery-1.4.2.min.js"><\/script>');
-          </script>
-          <script src='./js/vendor/plugins.js'></script>
-          <script src='./js/vendor/jquery-audivid.js'></script>
-          <script src='./js/app.js'></script>
-          <script>
-            var _gaq = [['_setAccount', 'UA-228926-7'], ['_trackPageview']];
-            (function(d, t) {
-            var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
-            g.async = true; g.src = 'http://www.google-analytics.com/ga.js'; s.parentNode.insertBefore(g, s);
-            })(document, 'script');
-          </script>
+        <div class='buttons'>
+          <a data-soundfile='nohkampfundbluet'>Nohkampf und Bluet</a>
+          <a data-soundfile='larveaberiisse'>Larve aberiise</a>
+          <a data-soundfile='izgsichtlange'>Iz Gsicht lange</a>
+          <a data-soundfile='so_gseht_me_noed_us'>So gseht me nöd us</a>
+          <a data-soundfile='kontrolliertundkommandiert'>Kontrolliert und kommandiert</a>
+          <a data-soundfile='hallauerrecht'>Hallauer-Rächt</a>
+          <a data-soundfile='saulade'>Saulade</a>
+          <a data-soundfile='dummerwiis'>Dummerwiis</a>
+          <a data-soundfile='taetsch'>Tätsch</a>
+          <a data-soundfile='garnued'>Gar nüt</a>
+          <a data-soundfile='verdienet'>Verdienet</a>
+          <a data-soundfile='schrekliche_dummchopf'>Dummchopf</a>
+          <a data-soundfile='dabadaba'>Dabadaba</a>
+          <a data-soundfile='usruume'>Uusruume</a>
+          <a data-soundfile='sis_problem'>Sis Problem</a>
+          <a data-soundfile='alles_falsch'>Alles Flasch</a>
+          <a data-soundfile='grosse_irrtum'>Grosse Irrtum</a>
+          <a data-soundfile='eric_tuerke_jage'>Eric: Türke jage</a>
+          <a data-soundfile='eric_gottverdammtisauerei'>Eric: Gottverdammti Sauerei</a>
+          <a data-soundfile='eric_leckmichamarsch'>Eric: Läckmer</a>
         </div>
       </div>
     </div>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js'></script>
+    <script>
+      !window.jQuery && document.write('<script src="./js/vendor/jquery-1.4.2.min.js"><\/script>');
+    </script>
+    <script src='./js/vendor/plugins.js'></script>
+    <script src='./js/vendor/jquery-audivid.js'></script>
+    <script src='./js/app.js'></script>
   </body>
 </html>
