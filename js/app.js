@@ -11,7 +11,7 @@ function init_ui() {
     var audioTagSupport = !!((myAudioTag = document.createElement('audio')).canPlayType);
     format.canPlayTag = audioTagSupport ? myAudioTag.canPlayType(format.mime) : "undefined";
     if( format.canPlayTag ) {
-      $("#buttons a").each(
+      $(".buttons a").each(
         function() {
           $(this).click( function() {
             var p = $(this).attr( "data-soundfile");
